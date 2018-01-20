@@ -1,0 +1,27 @@
+{
+  "name": "coffeebreakjs",
+  "version": "0.0.1",
+  "description": "'A javascript library for promptly making coffee-break content for digital publication; crosswords, maze puzzles, codewords, sudoku e.t.c'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaybarax/coffee-break-js.git"
+  },
+  "keywords": [
+    "'coffee-break-js",
+    "maze",
+    "puzzles",
+    "crosswords",
+    "sudoku",
+    "canvas'"
+  ],
+  "author": "Kevin Barasa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kaybarax/coffee-break-js/issues"
+  },
+  "homepage": "https://github.com/Kaybarax/coffee-break-js#readme"
+}
