@@ -1,4 +1,6 @@
 
+// const styles = require();
+
 export default class Crossword {
 
     constructor(domNode, numberOfRows, numberOfColumns) {

@@ -1,0 +1,10 @@
+
+html {
+    --cells-count : 0;
+}
+
+.crossword-grid {
+    display: grid;
+    grid-template-columns: repeat( var(--cells-count), 1fr );
+}
+

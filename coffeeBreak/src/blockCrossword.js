@@ -1,5 +1,6 @@
 
 import Crossword from "./crossword";
+import {injectStyle} from "../util/util";
 
 export default class BlockCrossword extends Crossword {
 
@@ -25,21 +26,20 @@ export default class BlockCrossword extends Crossword {
     assignCellNumber() {}
 
     createCrossword() {
-
         let crossword = document.getElementById(this.domNode);
+        let cxwdSuffix = '-block-cxwd';
         crossword.createElement('div');
-        crossword.getElementsByTagName('div').id = this.domNode+'cxwd';
-        crossword = document.getElementById(this.domNode+'cxwd');
+        crossword.getElementsByTagName('div').id = this.domNode+cxwdSuffix;
+        crossword = document.getElementById(this.domNode+cxwdSuffix);
         for (let i = 0; i < this.numberOfRows; i++) {
             for (let j = 0; j < this.numberOfColumns; j++) {
                 crossword.createElement('div');
             }
         }
-
+        BlockCrossword.gridCrossword(crossword.getAttribute('id'));
     }
 
-    gridCrossword(divNode) {
-        let divNode = document.getElementById(divNode);
-        divNode.setAttribute('class', 'crossword-grid');
+    static gridCrossword(crosswordDomNode) {
+        injectStyle(crosswordDomNode, []);
     }
 }
