@@ -6,4 +6,7 @@ npm-debug.log
 yarn-error.log
 
 # web test builds
-web/
+web
+
+# idea
+.idea

@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41d99775-567a-41ec-9856-83fa846e4cc7" name="Default" comment="First webpack test build, mocha unit test test, refine get dom node.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/__tests__/tests.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/coffeeBreak/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/block-crossword.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/style.css" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/coffeeBreak/src/blockCrossword.js" afterPath="$PROJECT_DIR$/coffeeBreak/src/blockCrossword.js" />
-      <change beforePath="$PROJECT_DIR$/coffeeBreak/src/crossword.js" afterPath="$PROJECT_DIR$/coffeeBreak/src/crossword.js" />
-      <change beforePath="$PROJECT_DIR$/coffeeBreak/util/util.js" afterPath="$PROJECT_DIR$/coffeeBreak/util/util.js" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-    </list>
+    <list default="true" id="41d99775-567a-41ec-9856-83fa846e4cc7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -283,7 +267,7 @@
       <updated>1516464494366</updated>
       <workItem from="1516464498710" duration="12691000" />
       <workItem from="1517048335688" duration="9074000" />
-      <workItem from="1517060492747" duration="968000" />
+      <workItem from="1517060492747" duration="994000" />
     </task>
     <task id="LOCAL-00001" summary="Add mocha and chai for unit tests. Add css style injectors">
       <created>1516540564749</created>
@@ -292,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516540564749</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First webpack test build, mocha unit test test, refine get dom node.">
+      <created>1517061478554</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517061478554</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -301,7 +292,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22733000" />
+    <option name="totallyTimeSpent" value="22759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
