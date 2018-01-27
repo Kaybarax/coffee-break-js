@@ -1,15 +1,15 @@
 
 module.exports = {
-    entry: './main.js',
+    entry: './coffeeBreak/main.js',
     output: {
-        filename: './bundle.js'
+        filename: './web/coffeeBreak.js'
     },
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 query: {
                     presets: ['es2015']
                 }

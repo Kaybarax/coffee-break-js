@@ -1,12 +1,17 @@
 
+/**
+ * Returns a dom node with the passed id
+ * @param domNode
+ * @returns {HTMLElement | null}
+ */
+const getDomNode = domNode => document.getElementById(domNode);
+
 const injectStyle = (domNode, styleInjectorFunctionsArray) => {
-    if (isEmptyString(domNode)) {
+    if (isEmptyString(domNode))
         throw 'Node is undefined';
-    }
-    let root = document.getElementById(domNode);
     //check if it has style attribute
-    let rootHasStyle = root.hasAttribute('style');
-    if (rootHasStyle) {
+    let hasStyle = getDomNode(domNode).hasAttribute('style');
+    if (hasStyle) {
         appendStyle(domNode, styleInjectorFunctionsArray);
     } else {
         addStyle(domNode, styleInjectorFunctionsArray);
@@ -14,7 +19,8 @@ const injectStyle = (domNode, styleInjectorFunctionsArray) => {
 };
 
 const appendStyle = (domNode, styleInjectorFunctionsArray) => {
-    let style = ''+document.getElementById(domNode).getAttribute('style');
+    let node = getDomNode(domNode);
+    let style = ''+node.getAttribute('style');
     if (style.length > 0 && style.substring(style.length - 1) !== ';') {
         style += ';';
     }
@@ -23,10 +29,17 @@ const appendStyle = (domNode, styleInjectorFunctionsArray) => {
         newStyleString += styleStringBuilder(style);
     }
     style += newStyleString;
-    return style;
+    node.setAttribute('style', style);
 };
 
-const addStyle = (domNode, styleInjectorFunctionsArray) => {};
+const addStyle = (domNode, styleInjectorFunctionsArray) => {
+    let node = getDomNode(domNode);
+    let newStyleString = '';
+    for (let style of styleInjectorFunctionsArray) {
+        newStyleString += styleStringBuilder(style);
+    }
+    node.setAttribute('style', newStyleString);
+};
 
 const styleStringBuilder = (object) => {
     let styleStringBuilder = '';
@@ -68,4 +81,4 @@ const isObject = () => {};
 
 const isArray = () => {};
 
-export {injectStyle};
+export {getDomNode, injectStyle};

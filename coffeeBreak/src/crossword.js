@@ -1,18 +1,11 @@
 
-// const styles = require();
-
 export default class Crossword {
 
     constructor(domNode, numberOfRows, numberOfColumns) {
-        this.domNode = domNode;
-        this.numberOfRows = numberOfRows;
-        this.numberOfColumns = numberOfColumns;
+        this.domNode = domNode || 'root';
+        this.numberOfRows = numberOfRows || 0;
+        this.numberOfColumns = numberOfColumns || 0;
     }
-
-    numberOfRows = 0;
-    numberOfColumns = 0;
-    cellSize = 20;
-    domNode = 'root';
 
     setColsAndRows(cols, rows) {
         this.numberOfColumns = cols;
